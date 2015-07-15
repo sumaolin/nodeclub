@@ -54,9 +54,15 @@
       label: '100offer',
       img_src: '//dn-cnode.qbox.me/FojExpHUPJ_1iG7qDOJvnRQ7RmnX',
     },
+    {
+      href: 'https://www.wilddog.com/',
+      label: 'wilddog',
+      img_src: '//dn-cnode.qbox.me/FgF7oZaTe70WOGoM-FB9r_f4kRPH',
+    },
+
   ];
 
-    var randomNum = (new Date()).getHours() % ads.length;
+    var randomNum = (new Date()).getMinutes() % ads.length;
 
     ads = ads.slice(randomNum).concat(ads.slice(0, randomNum));
 %>
